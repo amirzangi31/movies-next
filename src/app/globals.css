@@ -25,7 +25,7 @@ textarea {
 
 
 ::-webkit-scrollbar {
-
+  
   width: 5px;
   height: 5px;
   /* Customize the scrollbar width */
@@ -68,13 +68,36 @@ textarea {
 
 
 .btn-notification {
-  @apply rounded-full relative overflow-hidden w-[47px] h-[47px] border-2 border-primary flex justify-center items-center shadow-black after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1]  hover:after:left-0;
+  @apply rounded-full relative overflow-hidden w-[47px] h-[47px] border-2 border-primary flex justify-center items-center shadow-black after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1] hover:after:left-0;
 }
 
 
 .btn-outline-primary {
-  @apply rounded-3xl border-2 border-primary relative overflow-hidden text-text after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1]  hover:after:left-0 shadow-sh-black;
+  @apply rounded-3xl border-2 border-primary relative overflow-hidden text-text after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1] hover:after:left-0 shadow-sh-black;
 }
 
 
 /*End : buttons */
+
+
+/*Start : MenuSidebar */
+
+.menu-sidebar {
+  @apply flex justify-start items-center flex-col gap-2 mt-4;
+}
+
+.menu-sidebar .menu-sidebar__item {
+  @apply w-full;
+}
+
+
+.menu-sidebar .menu-sidebar__link {
+  @apply text-text py-3 px-4 flex justify-start items-center overflow-hidden gap-6 relative after:absolute after:block after:h-full after:w-[4px] after:bottom-full after:left-0 after:bg-primary after:rounded-xl after:transition-all after:duration-200 after:delay-200 before:absolute before:top-0 before:right-full before:block before:w-full before:h-full before:bg-primary/40 before:z-[-1] hover:before:right-0 before:transition-all before:duration-200 hover:after:bottom-0;
+}
+
+.menu-sidebar .menu-sidebar__link.active {
+  @apply after:bottom-0 before:right-0   ;
+}
+
+
+/*End : MenuSidebar */
