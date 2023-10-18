@@ -10,6 +10,7 @@ import TelegramIcon from '@/icons/socialmedia/TelegramIcon'
 import Instagram from '@/icons/socialmedia/Instagram'
 import TwitterIcon from '@/icons/socialmedia/TwitterIcon'
 import GitHubIcon from '@/icons/socialmedia/GitHubIcon'
+import ZarbIcon from '@/icons/ZarbIcon'
 
 
 const menuData = [
@@ -37,21 +38,32 @@ const menuData = [
 
 
 
-const Sidebar = () => {
+const Sidebar = ({open , setOpen}) => {
   return (
-    <aside className='w-[280px] h-screen bg-sidebar text-text z-10 pt-10 overflow-y-scroll'>
+    <>
+        <div className={` z-[15] fixed top-0 left-0 w-full h-screen ${open ? "md:hidden" : "hidden"}`} onClick={() => setOpen(false)}>
+          
+        </div>
+    <aside className={ `fixed ${open ? "right-0" : "-right-full"} top-0 transition-all duration-300 w-[400px] z-20 bg-sidebar-m max-w-full md:static    md:w-[280px] h-screen md:bg-sidebar text-text  pt-10 pb-3 overflow-y-scroll `}>
+      <div className='md:hidden w-[50px] h-[50px]  absolute top-1 left-2 border rounded-full flex justify-center items-center' onClick={() => setOpen(false)}>
+        <ZarbIcon width={25} height={25} /> 
+      </div>
+
         <div className='h-[63px] flex justify-center items-center px-4'><LogoIcon /> </div>
         <p className='px-4 text-md text-text mt-6 '>منو اصلی</p>
-        <div>
+        
             <ul className='menu-sidebar'>
               {menuData.map((item , index ) => (
                 <li key={index}  className='menu-sidebar__item'>
                   
-                  <Link href={item.link} className='menu-sidebar__link'>{item.icon} {item.name}</Link>
+                  <Link href={item.link} className='menu-sidebar__link'>
+                    <span className=' w-[30px] h-[30px]  flex justify-center items-center'>{item.icon}</span>
+                     <p className='w-[100px]'>{item.name}</p>
+                    </Link>
                 </li>
               ))}
             </ul>
-        </div>
+        
 
         <div className='my-6'>
                 <Divider   /> 
@@ -96,6 +108,7 @@ const Sidebar = () => {
         </div>
 
     </aside>
+    </>
   )
 }
 

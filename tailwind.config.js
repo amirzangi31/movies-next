@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/background-image.jpg')",
         "sidebar": "linear-gradient(180deg, #131313 0.01%, rgba(0, 0, 0, 0.30) 100.76%);",
+        "sidebar-m": "linear-gradient(180deg, #131313 0.01%, rgba(0, 0, 0, 0.80) 100.76%);",
 
       },
       colors: {
@@ -22,7 +23,8 @@ module.exports = {
         },
         bg: {
           main: "#141414",
-          overlay: "#000000cc"
+          overlay: "#000000cc",
+          secondary : "#303030"
         },
         success: "rgba(96, 255, 121, 0.87)",
         warning: "rgba(246, 178, 45, 0.87)",
@@ -42,6 +44,10 @@ module.exports = {
       },
       boxShadow : {
         "sh-black" : "4px 4px 8px 0px rgba(0, 0, 0, 0.25)"
+      },
+      screens : {
+        "xs" : "500px",
+        "tablet" : "900px"
       }
 
     },

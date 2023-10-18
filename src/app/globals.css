@@ -46,7 +46,7 @@ textarea {
 
 /*Start : content-left*/
 .content {
-  @apply w-full h-full overflow-y-scroll z-10 pt-10 px-6;
+  @apply w-full h-full overflow-y-scroll z-10 ;
 }
 
 /*End : content-left*/
@@ -83,7 +83,7 @@ textarea {
 /*Start : MenuSidebar */
 
 .menu-sidebar {
-  @apply flex justify-start items-center flex-col gap-2 mt-4;
+  @apply  md:flex md:justify-start md:items-center md:flex-col gap-2 mt-4;
 }
 
 .menu-sidebar .menu-sidebar__item {
