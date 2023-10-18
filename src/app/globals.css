@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-weight: 400;
+  color: #000000cc;
 }
+
+input,
+select,
+textarea {
+  @apply bg-transparent outline-none;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+
+  width: 5px;
+  height: 5px;
+  /* Customize the scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-[10px];
+  /* Customize the scrollbar thumb */
+}
+
+
+
+
+
+/*Start : content-left*/
+.content {
+  @apply w-full h-full overflow-y-scroll z-10 pt-10 px-6;
+}
+
+/*End : content-left*/
+
+
+
+/*Start : buttons */
+.btn {
+  @apply flex justify-center items-center;
+}
+
+.btn-sm {
+  @apply w-[100px] h-[47px];
+}
+
+.btn-primary {
+  @apply rounded-3xl border-2 border-primary relative after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-0 after:bg-primary after:z-[-1] overflow-hidden z-10 text-text hover:after:left-full shadow-sh-black;
+}
+
+
+.btn-notification {
+  @apply rounded-full relative overflow-hidden w-[47px] h-[47px] border-2 border-primary flex justify-center items-center shadow-black after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1]  hover:after:left-0;
+}
+
+
+.btn-outline-primary {
+  @apply rounded-3xl border-2 border-primary relative overflow-hidden text-text after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1]  hover:after:left-0 shadow-sh-black;
+}
+
+
+/*End : buttons */
