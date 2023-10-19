@@ -50,11 +50,11 @@ const Sidebar = ({open , setOpen}) => {
           
         </div>
         
-    <aside className={ `fixed ${open ? "right-0" : "-right-full"} top-0 transition-all duration-300 w-[400px] z-20 bg-sidebar-m max-w-full 
-    text-text  pt-10 pb-3 overflow-y-scroll
-    
+    <aside className={ `fixed ${open ? "right-0" : "-right-full"} top-0  
+    z-20 w-full
     md:static    md:w-[280px] h-screen md:bg-sidebar  `}>
-      <div className=''>
+      <div className='z-20 bg-sidebar-m max-w-full  relative
+    text-text  pt-10 pb-3 overflow-y-scroll transition-all duration-300 w-[400px] h-screen'>
 
       <div className='md:hidden   absolute top-1 left-0 px-2 flex justify-end items-center  w-full  ' onClick={() => setOpen(false)}>
         <div className='w-[50px] h-[50px] border rounded-full flex justify-center items-center'  >

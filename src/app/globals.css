@@ -53,7 +53,7 @@ textarea {
 
 /*Start : Sidebar*/
 .sidebar {
-  
+
 }
 /*End : Sidebar*/
 
@@ -118,7 +118,7 @@ textarea {
 
 
 .menu-sidebar .menu-sidebar__link {
-  @apply text-text py-3 px-4 flex justify-start items-center overflow-hidden gap-6 relative after:absolute after:block after:h-full after:w-[4px] after:bottom-full after:left-0 after:bg-primary after:rounded-xl after:transition-all after:duration-200 after:delay-200 before:absolute before:top-0 before:right-full before:block before:w-full before:h-full before:bg-primary/40 before:z-[-1] hover:before:right-0 before:transition-all before:duration-200 hover:after:bottom-0;
+  @apply text-text py-3 px-4 flex justify-center md:justify-start items-center overflow-hidden gap-6 relative after:absolute after:block after:h-full after:w-[4px] after:bottom-full after:left-0 after:bg-primary after:rounded-xl after:transition-all after:duration-200 after:delay-200 before:absolute before:top-0 before:right-full before:block before:w-full before:h-full before:bg-primary/40 before:z-[-1] hover:before:right-0 before:transition-all before:duration-200 hover:after:bottom-0;
 }
 
 .menu-sidebar .menu-sidebar__link.active {
