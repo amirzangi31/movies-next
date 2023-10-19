@@ -25,7 +25,7 @@ textarea {
 
 
 ::-webkit-scrollbar {
-  
+
   width: 5px;
   height: 5px;
   /* Customize the scrollbar width */
@@ -46,10 +46,16 @@ textarea {
 
 /*Start : content-left*/
 .content {
-  @apply w-full h-full overflow-y-scroll z-10 ;
+  @apply w-full h-full overflow-y-scroll z-10;
 }
 
 /*End : content-left*/
+
+/*Start : Sidebar*/
+.sidebar {
+  
+}
+/*End : Sidebar*/
 
 
 
@@ -76,14 +82,34 @@ textarea {
   @apply rounded-3xl border-2 border-primary relative overflow-hidden text-text after:absolute after:w-full after:h-full after:block after:transition-all after:duration-200 after:top-0 after:left-full after:bg-primary after:z-[-1] hover:after:left-0 shadow-sh-black;
 }
 
-
 /*End : buttons */
+
+/*Start : button is sign */
+.btn-is-sign {
+  @apply relative;
+}
+
+.btn-is-sign .btn-is-sign__button {
+  @apply min-w-[180px] flex justify-between items-center border border-primary rounded-3xl ;
+}
+
+.btn-is-sign .btn-is-sign__link{
+      @apply flex text-sm justify-between items-center gap-2 hover:text-primary transition-all duration-300;
+}
+.btn-is-sign .btn-is-sign__drop{
+      @apply text-text absolute top-full left-0 w-full p-4 rounded-xl bg-bg-main  justify-start items-start gap-4 flex-col hidden;
+}
+.btn-is-sign .btn-is-sign__drop.active{
+      @apply flex;
+}
+
+/*End : button is sign */
 
 
 /*Start : MenuSidebar */
 
 .menu-sidebar {
-  @apply  md:flex md:justify-start md:items-center md:flex-col gap-2 mt-4;
+  @apply md:flex md:justify-start md:items-center md:flex-col gap-2 mt-4;
 }
 
 .menu-sidebar .menu-sidebar__item {
@@ -96,7 +122,8 @@ textarea {
 }
 
 .menu-sidebar .menu-sidebar__link.active {
-  @apply after:bottom-0 before:right-0   ;
+  @apply after:bottom-0 before:right-0;
+
 }
 
 

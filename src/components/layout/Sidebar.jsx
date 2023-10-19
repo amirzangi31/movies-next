@@ -39,14 +39,27 @@ const menuData = [
 
 
 const Sidebar = ({open , setOpen}) => {
+  
+
+
+
+
   return (
     <>
         <div className={` z-[15] fixed top-0 left-0 w-full h-screen ${open ? "md:hidden" : "hidden"}`} onClick={() => setOpen(false)}>
           
         </div>
-    <aside className={ `fixed ${open ? "right-0" : "-right-full"} top-0 transition-all duration-300 w-[400px] z-20 bg-sidebar-m max-w-full md:static    md:w-[280px] h-screen md:bg-sidebar text-text  pt-10 pb-3 overflow-y-scroll `}>
-      <div className='md:hidden w-[50px] h-[50px]  absolute top-1 left-2 border rounded-full flex justify-center items-center' onClick={() => setOpen(false)}>
-        <ZarbIcon width={25} height={25} /> 
+        
+    <aside className={ `fixed ${open ? "right-0" : "-right-full"} top-0 transition-all duration-300 w-[400px] z-20 bg-sidebar-m max-w-full 
+    text-text  pt-10 pb-3 overflow-y-scroll
+    
+    md:static    md:w-[280px] h-screen md:bg-sidebar  `}>
+      <div className=''>
+
+      <div className='md:hidden   absolute top-1 left-0 px-2 flex justify-end items-center  w-full  ' onClick={() => setOpen(false)}>
+        <div className='w-[50px] h-[50px] border rounded-full flex justify-center items-center'  >
+          <ZarbIcon width={25} height={25} /> 
+        </div>
       </div>
 
         <div className='h-[63px] flex justify-center items-center px-4'><LogoIcon /> </div>
@@ -105,6 +118,7 @@ const Sidebar = ({open , setOpen}) => {
 
         <div className='mt-12 px-4'>
                 <p className='text-sm text-center'>تمامی حقوق این سایت مربوط به <Link href={"https://resume-zangiabadi.netlify.app"} target='_blank'  className='font-[600] text-primary'>امیرمحمد زنگی ابادی</Link>  می باشد </p>
+        </div>
         </div>
 
     </aside>
