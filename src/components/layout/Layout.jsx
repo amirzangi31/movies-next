@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 
+
+
 const Layout = ({ children }) => {
   const [openMenu , setOpenMenu] = useState(false)
 
@@ -34,13 +36,13 @@ const Layout = ({ children }) => {
      ">
       <Sidebar open={openMenu} setOpen={setOpenMenu} />
     
-      <div className="content" onScroll={scrollHandler}>
+      <main className="content" onScroll={scrollHandler}>
         
         <Header scroll={navStyle} setOpen={setOpenMenu} /> 
         
         
-        <div className="pt-1 px-6">{children}</div>
-      </div>
+        <div className="pt-4 px-6">{children}</div>
+      </main>
     </div>
   );
 };

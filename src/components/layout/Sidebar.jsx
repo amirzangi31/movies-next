@@ -82,10 +82,10 @@ const Sidebar = ({open , setOpen}) => {
                 <Divider   /> 
         </div>
         <div className='px-4'>
-          <p className='text-md relative after:block after:absolute after:w-2 after:h-2 after:rounded-full after:top-[calc(50%-4px)] after:right-[-10px] after:bg-primary '>شبکه های اجتماعی</p>
+          <p className='text-md text-right relative after:block after:absolute after:w-2 after:h-2 after:rounded-full after:top-[calc(50%-4px)] after:right-[-10px] after:bg-primary '>شبکه های اجتماعی</p>
           <ul className='mt-4 grid grid-cols-2 gap-2'>
                 <li>
-                  <Link href={"#"} className='flex items-center  gap-2 hover:text-primary transition-all duration-300'>
+                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
                     تلگرام
                     <TelegramIcon /> 
                   </Link>
@@ -94,19 +94,19 @@ const Sidebar = ({open , setOpen}) => {
                   
                 </li>
                 <li>
-                  <Link href={"#"} className='flex items-center  gap-2 hover:text-primary transition-all duration-300'>
+                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
                     اینستاگرام
                     <Instagram /> 
                   </Link>
                   </li>
                 <li>
-                  <Link href={"#"} className='flex items-center  gap-2 hover:text-primary transition-all duration-300'>
+                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
                     توییتر
                     <TwitterIcon /> 
                   </Link>
                   </li>
                 <li>
-                  <Link href={"#"} className='flex items-center  gap-2 hover:text-primary transition-all duration-300'>
+                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
                     گیت هاب
                     <GitHubIcon /> 
                   </Link>

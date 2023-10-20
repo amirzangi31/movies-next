@@ -9,8 +9,7 @@
 }
 
 body {
-  font-weight: 400;
-  color: #000000cc;
+  @apply text-text font-[400];
 }
 
 input,
@@ -90,7 +89,7 @@ textarea {
 }
 
 .btn-is-sign .btn-is-sign__button {
-  @apply min-w-[180px] flex justify-between items-center border border-primary rounded-3xl ;
+  @apply w-[180px] flex justify-between items-center border border-primary rounded-3xl ;
 }
 
 .btn-is-sign .btn-is-sign__link{
