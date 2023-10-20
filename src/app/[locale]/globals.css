@@ -96,7 +96,7 @@ textarea {
       @apply flex text-sm justify-between items-center gap-2 hover:text-primary transition-all duration-300;
 }
 .btn-is-sign .btn-is-sign__drop{
-      @apply text-text absolute top-full left-0 w-full p-4 rounded-xl bg-bg-main  justify-start items-start gap-4 flex-col hidden;
+      @apply text-text absolute top-full left-0 w-full p-4 rounded-xl bg-bg-main  justify-start items-start gap-4 flex-col hidden z-20;
 }
 .btn-is-sign .btn-is-sign__drop.active{
       @apply flex;

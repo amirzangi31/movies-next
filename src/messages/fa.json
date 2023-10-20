@@ -1,0 +1,31 @@
+{
+  "Sidebar" : {
+      "title" : "منو اصلی",
+      "titleSocial" :"شبکه های اجتماعی",
+      "telegram" : "تلگرام",
+      "twitter" : "توییتر",
+      "github" : "گیت هاب",
+      "instagram" : "اینستاگرام"
+      
+  },
+  
+  "SearchBox":{
+    "placeholder" : "جستجو فیلم وسریال ..."
+  },
+  "DropSign" : {
+    "day" : "روز",
+    "settings" : "تنظیمات حساب کاربری",
+    "subscription" : "اتمام اشتراک",
+    "logout" : "خروج"
+  },
+  "SideLeft" : {
+      "title" : "فیلم های پیشنهادی" ,
+      "movieOne" : "بازی تاج و تخت",
+      "movieTwo" : "وایکینگ  ها"
+  },
+  "CardSide" : {
+      "name" : "نام" ,
+      "seasons" : "تعداد فصل",
+      "score" : "امتیاز"
+  }
+}

@@ -11,27 +11,47 @@ import Instagram from '@/icons/socialmedia/Instagram'
 import TwitterIcon from '@/icons/socialmedia/TwitterIcon'
 import GitHubIcon from '@/icons/socialmedia/GitHubIcon'
 import ZarbIcon from '@/icons/ZarbIcon'
+import { useLocale, useTranslations } from 'next-intl'
 
 
 const menuData = [
   {
-    name : "صفحه اصلی",
-    link : "/",
+    fa : "صفحه اصلی",
+    en : "Home",
+    link : {
+      en : "/en",
+      fa : "/"
+    },
     icon : <HomeIcon /> 
   },
   {
-    name : "مورد علاقه",
-    link : "/favorites",
+    fa : "مورد علاقه",
+    en : "Favorites",
+  
+    link : {
+      en : "/en/favorites",
+      fa : "/favorites"
+    },
     icon : <HeartIcon /> 
   },
   {
-    name : "مورد انتظار",
-    link : "/expected",
+    fa : "مورد انتظار",
+    en : "Expected",
+  
+    link : {
+      en : "/en/expected",
+      fa : "/expected"
+    },
     icon : <ExpectationIIcon /> 
   },
   {
-    name : "خرید اشتراک",
-    link : "/subscribe",
+    fa : "خرید اشتراک",
+    en : "Subscribe",
+  
+    link : {
+      en : "/en/subscribe",
+      fa : "/subscribe"
+    },
     icon : <SubscriptionIcon /> 
   },
 ]
@@ -39,9 +59,10 @@ const menuData = [
 
 
 const Sidebar = ({open , setOpen}) => {
+  const t = useTranslations("Sidebar")
+
+  const locale = useLocale()
   
-
-
 
 
   return (
@@ -63,15 +84,15 @@ const Sidebar = ({open , setOpen}) => {
       </div>
 
         <div className='h-[63px] flex justify-center items-center px-4'><LogoIcon /> </div>
-        <p className='px-4 text-md text-text mt-6 '>منو اصلی</p>
+        <p className='px-4 text-md text-text mt-6 '>{t("title")}</p>
         
             <ul className='menu-sidebar'>
               {menuData.map((item , index ) => (
                 <li key={index}  className='menu-sidebar__item'>
                   
-                  <Link href={item.link} className='menu-sidebar__link'>
+                  <Link href={item.link[locale]} className='menu-sidebar__link'>
                     <span className=' w-[30px] h-[30px]  flex justify-center items-center'>{item.icon}</span>
-                     <p className='w-[100px]'>{item.name}</p>
+                     <p className='w-[100px]'>{item[locale]}</p>
                     </Link>
                 </li>
               ))}
@@ -82,11 +103,11 @@ const Sidebar = ({open , setOpen}) => {
                 <Divider   /> 
         </div>
         <div className='px-4'>
-          <p className='text-md text-right relative after:block after:absolute after:w-2 after:h-2 after:rounded-full after:top-[calc(50%-4px)] after:right-[-10px] after:bg-primary '>شبکه های اجتماعی</p>
+          <p className='text-md ltr:text-left rtl:text-right relative after:block after:absolute after:w-2 after:h-2 after:rounded-full after:top-[calc(50%-4px)] rtl:after:right-[-10px] ltr:after:left-[-10px] after:bg-primary '>{t("titleSocial")}</p>
           <ul className='mt-4 grid grid-cols-2 gap-2'>
                 <li>
-                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
-                    تلگرام
+                  <Link href={"#"} className='flex items-center rtl:justify-end  ltr:justify-end ltr:flex-row-reverse rtl:flex-row  gap-2 hover:text-primary transition-all duration-300'>
+                    {t("telegram")}
                     <TelegramIcon /> 
                   </Link>
                   
@@ -94,20 +115,23 @@ const Sidebar = ({open , setOpen}) => {
                   
                 </li>
                 <li>
-                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
-                    اینستاگرام
+                  <Link href={"#"} className='flex items-center rtl:justify-end  ltr:justify-end ltr:flex-row-reverse rtl:flex-row  gap-2 hover:text-primary transition-all duration-300'>
+                    {t("instagram")}
+                    
                     <Instagram /> 
                   </Link>
                   </li>
                 <li>
-                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
-                    توییتر
+                  <Link href={"#"} className='flex items-center rtl:justify-end  ltr:justify-end ltr:flex-row-reverse rtl:flex-row  gap-2 hover:text-primary transition-all duration-300'>
+                    {t("twitter")}
+                    
                     <TwitterIcon /> 
                   </Link>
                   </li>
                 <li>
-                  <Link href={"#"} className='flex items-center justify-end  gap-2 hover:text-primary transition-all duration-300'>
-                    گیت هاب
+                  <Link href={"#"} className='flex items-center rtl:justify-end  ltr:justify-end ltr:flex-row-reverse rtl:flex-row  gap-2 hover:text-primary transition-all duration-300'>
+                    {t("github")}
+                    
                     <GitHubIcon /> 
                   </Link>
                   </li>
@@ -117,7 +141,7 @@ const Sidebar = ({open , setOpen}) => {
                 
 
         <div className='mt-12 px-4'>
-                <p className='text-sm text-center'>تمامی حقوق این سایت مربوط به <Link href={"https://resume-zangiabadi.netlify.app"} target='_blank'  className='font-[600] text-primary'>امیرمحمد زنگی ابادی</Link>  می باشد </p>
+                <p className='text-sm text-center'>{locale === "en" ? "All rights of this site belong to " : " تمامی حقوق اسن سایت مربوط به" }<Link href={"https://resume-zangiabadi.netlify.app"} target='_blank'  className='font-[600] text-primary'>{locale === "en" ? "Amirmohammad zangiabadi" : "امیرمحمد زنگی ابادی"}</Link>  {locale === "en" ? "" : "میباشذ"}</p>
         </div>
         </div>
 

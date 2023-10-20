@@ -10,8 +10,10 @@ import SubIcon from '@/icons/SubIcon'
 import LogoutIcon from '@/icons/LogoutIcon'
 import { usePathname } from 'next/navigation'
 import ArrowUpIcon from '@/icons/ArrowUpIcon'
+import { useTranslations } from 'next-intl'
 
 const ButtonIsSign = () => {
+  const t = useTranslations("DropSign")
     const [open  , setOpen] = useState(false)
   const pathname = usePathname()
 
@@ -41,17 +43,17 @@ const ButtonIsSign = () => {
     <div className={`btn-is-sign__drop ${open && "active"} `}>
             <Link href={"/"} className='btn-is-sign__link'>
               <SettingsIcon /> 
-              تنظیمات حساب کاربری
+              {t("settings")}
             </Link>
             <Divider />
             <Link href={"/"} className='btn-is-sign__link'>
               <SubIcon /> 
-              اتمام اشتراک : 60روز
+              {t("subscription")} : 60 {t("day")}
             </Link>
             <Divider /> 
             <button type='button'  className='btn-is-sign__link'>
               <LogoutIcon /> 
-              خروج
+              {t("logout")}
             </button>
     </div>
     </div>

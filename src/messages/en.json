@@ -1,0 +1,30 @@
+{
+    "Sidebar": {
+      "title": "Main Menu",
+      "titleSocial" :"Social media",
+      "telegram" : "Telegram",
+      "twitter" : "Twitter",
+      "github" : "Github",
+      "instagram" : "Instagram"
+    
+    },
+    "DropSign" : {
+      "day" : "day",
+      "settings" : "User account settings",
+      "subscription" : "End subscription",
+      "logout" : "Logout"
+    },
+    "SearchBox":{
+      "placeholder" : "Search movies and series ..."
+    },
+    "SideLeft" : {
+      "title" : "Suggested movies" ,
+      "movieOne" : "Game Of Thrones",
+      "movieTwo" : "Vikings"
+    },
+    "CardSide" : {
+      "name" : "name" ,
+      "seasons" : "Number Of Seasons",
+      "score" : "Score"
+  }
+  }

@@ -1,10 +1,14 @@
 "use client"
 
 import ZarbIcon from "@/icons/ZarbIcon"
+import { useTranslations } from "next-intl"
 
 
 
 const Searchbox = ({open , setOpen}) => {
+  const t = useTranslations("SearchBox")
+
+
   const openHandler = () => {
     setOpen(true)
     console.log(open)
@@ -30,7 +34,7 @@ const Searchbox = ({open , setOpen}) => {
                     </svg>
             </span>
             <input type="text" className={`${open ? "flex-1 " : "w-0 md:w-auto md:flex-1"}  text-text text-md  placeholder:text-text placeholder:text-md transition-all duration-300`} 
-            placeholder='جستجوی فیلم و سریال ...' />
+            placeholder={t("placeholder")} />
             <span className={`w-[40px] h-[47px] cursor-pointer ${open ? "md:hidden" : "hidden"} rounded-full flex justify-center items-center text-3xl `}
             onClick={closeHandler}
             >
