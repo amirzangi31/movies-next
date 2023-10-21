@@ -8,6 +8,21 @@
       "instagram" : "Instagram"
     
     },
+    "AuthButtons":{
+      "signIn" : "SignIn",
+      "signUp" : "SignUp"
+    },
+    "Reminder" : {
+      "title" : "Do you want me to remind you?",
+      "button" : "Reminder"
+    }
+    ,
+    "time" :{
+      "day" : "day",
+      "hour" : "hour",
+      "minute" : "minute"
+    }
+    ,
     "DropSign" : {
       "day" : "day",
       "settings" : "User account settings",
@@ -26,5 +41,39 @@
       "name" : "name" ,
       "seasons" : "Number Of Seasons",
       "score" : "Score"
+  },
+  "Titles" : {
+    "seeAll" : "SeeAll",
+    "newest" : "Newest",
+    "actors" : "Popular actors",
+    "ourSuggestion" : "Our suggestion",
+    "scary" : "Scary",
+    "animation" : "Animation"
+
+  },
+  "MovieCard" : {
+    "genre" : "Genre",
+    "director" : "Director",
+    "language":"Language",
+    "periodOfTime" : "Period of time",
+    "quality" : "Quality"
+  },
+  "Auth" : {
+    "signin" : "SignIn",
+    "signup" : "SignUp",
+    "account" : "I have an account",
+    "noaccount" : "I don't have an account",
+    "email" : "Email",
+    "password" : "Password",
+    "forgotpassword" : "Forgot Password",
+    "name" : "Name",
+    "lastname" : "Last Name",
+    "repeatpassword" : "Repeat Password",
+    "pName" : "Please enter your name",
+    "pLastname" : "Please enter your lastname",
+    "pEmail" : "Please enter your email",
+    "pPassword" : "Please enter your password",
+    "pRepeatpassword" : "Please repeat your password"
   }
+  
   }

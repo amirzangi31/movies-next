@@ -11,9 +11,9 @@ const CardSide = ({title , sesson  , range , bg}) => {
 
 
   return (
-    <Link href={"/"} className="bg-[url('/cover-one.png')] w-full h-[230px] flex justify-center items-end bg-cover rounded-2xl bg-center bg-no-repeat overflow-hidden">
+    <Link href={"/"} className="group bg-[url('/cover-one.png')] relative h-[230px] w-[180px] flex justify-center items-end bg-cover rounded-2xl bg-center bg-no-repeat overflow-hidden">
         
-        <div className='h-1/3 p-2 backdrop-blur-sm bg-black/40 w-full flex justify-between items-start flex-col'>
+        <div className=' p-2 backdrop-blur-sm bg-black/40 w-full flex justify-between items-start flex-col md:absolute -bottom-full  left-0 group-hover:bottom-0 transition-all duration-300'>
             <div className='flex justify-start items-center gap-1 text-sm'>
               <span ><MovieIcon /></span>
               <p>{t("name")} :</p>

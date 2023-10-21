@@ -1,8 +1,9 @@
+"use client"
+
 import React from 'react'
 import LogoIcon from '@/icons/LogoIcon'
 import HomeIcon from '@/icons/menu/HomeIcon'
 import HeartIcon from '@/icons/menu/HeartIcon'
-import ExpectationIIcon from '@/icons/menu/ExpectationIIcon'
 import SubscriptionIcon from '@/icons/menu/SubscriptionIcon'
 import Link from 'next/link'
 import Divider from '../element/Divider'
@@ -12,6 +13,11 @@ import TwitterIcon from '@/icons/socialmedia/TwitterIcon'
 import GitHubIcon from '@/icons/socialmedia/GitHubIcon'
 import ZarbIcon from '@/icons/ZarbIcon'
 import { useLocale, useTranslations } from 'next-intl'
+import ButtonIsSign from '../modules/ButtonIsSign'
+import LangIcon from '@/icons/LangIcon'
+import MoviesIcon from '@/icons/menu/MoviesIcon'
+import {  usePathname } from 'next/navigation'
+import { shortPahtnameHandler } from '@/helper/functions'
 
 
 const menuData = [
@@ -35,14 +41,14 @@ const menuData = [
     icon : <HeartIcon /> 
   },
   {
-    fa : "مورد انتظار",
-    en : "Expected",
+    fa : "فیلم ها",
+    en : "Movies",
   
     link : {
-      en : "/en/expected",
-      fa : "/expected"
+      en : "/en/movies",
+      fa : "/movies"
     },
-    icon : <ExpectationIIcon /> 
+    icon : <MoviesIcon /> 
   },
   {
     fa : "خرید اشتراک",
@@ -58,11 +64,14 @@ const menuData = [
 
 
 
-const Sidebar = ({open , setOpen}) => {
+const Sidebar = ({open , setOpen }) => {
   const t = useTranslations("Sidebar")
-
+  const authB= useTranslations("AuthButtons")
   const locale = useLocale()
+  const pathname = usePathname()
+
   
+
 
 
   return (
@@ -84,6 +93,17 @@ const Sidebar = ({open , setOpen}) => {
       </div>
 
         <div className='h-[63px] flex justify-center items-center px-4'><LogoIcon /> </div>
+        <div className='flex justify-center items-center md:hidden'>
+          {false ? <ButtonIsSign />  : (
+            
+            <div className='flex justify-center items-center gap-1 flex-wrap'>
+                <Link href={`/${locale}/signin`} ><button  type='button' className="btn btn-sm btn-outline-primary">{authB("signIn")}</button></Link>
+              <Link href={`/${locale}/signup`} ><button  type='button' className="btn btn-sm btn-primary">{authB("signUp")} </button></Link>
+            </div>
+          )}
+        </div>
+
+
         <p className='px-4 text-md text-text mt-6 '>{t("title")}</p>
         
             <ul className='menu-sidebar'>
@@ -96,6 +116,13 @@ const Sidebar = ({open , setOpen}) => {
                     </Link>
                 </li>
               ))}
+              <li className='menu-sidebar__item'>
+
+              <Link href={locale === "en" ?`/fa${shortPahtnameHandler(pathname)}`  : `/en${pathname}`} locale={locale}  className='menu-sidebar__link w-full'>
+              <span className=' w-[30px] h-[30px]  flex justify-center items-center'><LangIcon /> </span>
+                <p>{locale === "en" ? "persian language" : "تغییر زبان به انگلیسی"}</p>
+              </Link>
+              </li>
             </ul>
         
 
@@ -141,7 +168,7 @@ const Sidebar = ({open , setOpen}) => {
                 
 
         <div className='mt-12 px-4'>
-                <p className='text-sm text-center'>{locale === "en" ? "All rights of this site belong to " : " تمامی حقوق اسن سایت مربوط به" }<Link href={"https://resume-zangiabadi.netlify.app"} target='_blank'  className='font-[600] text-primary'>{locale === "en" ? "Amirmohammad zangiabadi" : "امیرمحمد زنگی ابادی"}</Link>  {locale === "en" ? "" : "میباشذ"}</p>
+                <p className='text-sm text-center'>{locale === "en" ? "All rights of this site belong to " : " تمامی حقوق این سایت مربوط به" }<Link href={"https://resume-zangiabadi.netlify.app"} target='_blank'  className='font-[600] text-primary'>{locale === "en" ? "Amirmohammad zangiabadi" : " امیرمحمد زنگی ابادی "}</Link>  {locale === "en" ? "" : "میباشذ"}</p>
         </div>
         </div>
 

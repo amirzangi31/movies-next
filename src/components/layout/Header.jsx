@@ -7,15 +7,16 @@ import HamburgerMenu from '@/icons/HamburgerMenu'
 import LogoIcon from '@/icons/LogoIcon'
 import Link from 'next/link'
 import ButtonIsSign from '../modules/ButtonIsSign'
+import { useLocale, useTranslations } from 'next-intl'
 
 const Header = ({scroll , setOpen}) => {
   const [openSearch , setOpenSearch] = useState(false)
-  const [sign , setSign] = useState(true)
-
-
+  const [sign , setSign] = useState(false)
+  const t = useTranslations("AuthButtons")
+  const locale = useLocale()
 
   return (
-    <header className={`sticky top-0 left-0  pt-5 sm:pt-10 px-6 ${scroll ? "backdrop-blur-sm" : ""} `} >
+    <header className={`sticky top-0 left-0  pt-5 sm:pt-10 px-6 z-20 ${scroll ? "backdrop-blur-sm" : ""} `} >
 
     <div className='block xs:hidden py-4'>
       <Link href={"/"}>
@@ -45,8 +46,8 @@ const Header = ({scroll , setOpen}) => {
             {
               sign ? <ButtonIsSign />  : <div className='flex justify-between items-center gap-2'>
 
-              <button  type='button' className="btn btn-sm btn-outline-primary">ورود</button>
-              <button  type='button' className="btn btn-sm btn-primary">ثبت نام </button>
+              <Link href={`/${locale}/signin`} ><button  type='button' className="btn btn-sm btn-outline-primary">{t("signIn")}</button></Link>
+              <Link href={`/${locale}/signup`} ><button  type='button' className="btn btn-sm btn-primary">{t("signUp")} </button></Link>
             </div>
             }
         </div>

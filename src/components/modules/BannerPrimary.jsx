@@ -1,7 +1,7 @@
 "use client"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+
 
 
 // Import Swiper styles
@@ -10,30 +10,47 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import ExpectedCard from './ExpectedCard';
+import { useState } from 'react';
 
 const BannerPrimary = () => {
+  const [swiper , setSwiper] = useState(null)
+
+
+  const nextSlide = () => {
+    console.log("next")
+    swiper.slideNext()
+  }
+  const prevSlide = () => {
+    console.log("prev")
+    swiper.slidePrev()
+  }
+
+
   return (
     
     <Swiper
-    modules={[Navigation]}
+    
     slidesPerView={1} 
-    navigation
-    onSlideChange={() => console.log('slide change')}
+    
+    
     speed={600}
     loop="true"
-    
+    onSwiper={(s) => {
+    console.log(s)
+        setSwiper(s)
+    }}
   >
-    <SwiperSlide className='border border-error' >
-      <ExpectedCard /> 
+    <SwiperSlide  >
+      <ExpectedCard next={nextSlide} prev={prevSlide} /> 
     </SwiperSlide>
-    <SwiperSlide className='border border-error' >
-      <ExpectedCard />
+    <SwiperSlide  >
+      <ExpectedCard next={nextSlide} prev={prevSlide} />
     </SwiperSlide>
-    <SwiperSlide className='border border-error' >
-      <ExpectedCard />
+    <SwiperSlide  >
+      <ExpectedCard next={nextSlide} prev={prevSlide} />
     </SwiperSlide>
-    <SwiperSlide className='border border-error' >
-      <ExpectedCard />
+    <SwiperSlide  >
+      <ExpectedCard next={nextSlide} prev={prevSlide} />
     </SwiperSlide>
     
   </Swiper>

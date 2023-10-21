@@ -12,6 +12,19 @@
   "SearchBox":{
     "placeholder" : "جستجو فیلم وسریال ..."
   },
+  "Reminder" : {
+    "title" : "میخوای بهت یادآوری کنم ؟",
+    "button" : "یادآوری کن "
+  },
+  "AuthButtons":{
+    "signIn" : "ورود",
+    "signUp" : "ثبت نام"
+  },
+  "time" :{
+    "day" : "روز",
+    "hour" : "ساعت",
+    "minute" : "دقیقه"
+  },
   "DropSign" : {
     "day" : "روز",
     "settings" : "تنظیمات حساب کاربری",
@@ -27,5 +40,38 @@
       "name" : "نام" ,
       "seasons" : "تعداد فصل",
       "score" : "امتیاز"
+  },
+  "Titles" : {
+    "newest" : "جدیدترین ها ",
+    "actors" : "بازیگران محبوب",
+    "ourSuggestion" : "پیشنهادی ما",
+    "scary" : "ترسناک",
+    "animation" : "انیمیشن",
+    "seeAll" : "دیدن همه"
+
+  },
+  "MovieCard" : {
+    "genre" : "ژانر",
+    "director" : "کارگردان",
+    "language":"زبان",
+    "periodOfTime" : "مدت زمان",
+    "quality" : "کیفیت"
+  },
+  "Auth" : {
+    "signin" : "ورود",
+    "signup" : "ثبت نام",
+    "email" : "ایمیل",
+    "account" : "من اکانت دارم ",
+    "noaccount" : "من اکانت ندارم ",
+    "password" : "رمز عبور",
+    "repeatpassword" : "تکرار رمز عبور",
+    "forgotpassword" : "فراموشی رمز",
+    "name" : "نام",
+    "lastname" : "نام خانوادگی",
+    "pName" : "لطفا نام خود را وارد کنید",
+    "pLastname" : "لطفا نام خانوادگی خود را وارد کنید",
+    "pEmail" : "لطفا ایمیل خود را وارد کنید",
+    "pPassword" : "لطفا رمز عبور خود را وارد کنید",
+    "pRepeatpassword" : "لطفا رمز عبور خود را تکرار کنید"
   }
 }

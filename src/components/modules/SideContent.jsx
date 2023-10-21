@@ -8,7 +8,7 @@ const SideContent = () => {
   
   
   return (
-    <div className='w-[180px] text-text  pb-8 hidden lg:block'>
+    <div className='w-3/12 sticky top-[120px] text-text  pb-8 hidden lg:block'>
             <div>
                 <h3 className='flex justify-between items-center z-[-1] relative after:absolute after:top-full rtl:after:right-0 ltr:after:left-0 after:w-1/2 after:h-[2px] after:block after:bg-primary'>
                     {t("title")}
