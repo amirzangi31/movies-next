@@ -16,7 +16,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import ButtonIsSign from '../modules/ButtonIsSign'
 import LangIcon from '@/icons/LangIcon'
 import MoviesIcon from '@/icons/menu/MoviesIcon'
-import {  usePathname } from 'next/navigation'
+import {   usePathname } from 'next/navigation'
 import { shortPahtnameHandler } from '@/helper/functions'
 
 
@@ -71,7 +71,7 @@ const Sidebar = ({open , setOpen }) => {
   const pathname = usePathname()
 
   
-
+  
 
 
   return (
