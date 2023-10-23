@@ -17,11 +17,11 @@ const BannerPrimary = () => {
 
 
   const nextSlide = () => {
-    console.log("next")
+    
     swiper.slideNext()
   }
   const prevSlide = () => {
-    console.log("prev")
+    
     swiper.slidePrev()
   }
 
@@ -35,8 +35,7 @@ const BannerPrimary = () => {
     
     speed={600}
     loop="true"
-    onSwiper={(s) => {
-    console.log(s)
+    onSwiper={(s) => {  
         setSwiper(s)
     }}
   >

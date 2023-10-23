@@ -11,11 +11,15 @@ import LogoutIcon from '@/icons/LogoutIcon'
 import { usePathname } from 'next/navigation'
 import ArrowUpIcon from '@/icons/ArrowUpIcon'
 import { useTranslations } from 'next-intl'
+import axios from 'axios'
+import { useDispatch } from 'react-redux'
+import { fetchUser } from '@/store/features/userSlice'
 
 const ButtonIsSign = () => {
   const t = useTranslations("DropSign")
     const [open  , setOpen] = useState(false)
   const pathname = usePathname()
+  const dispatch = useDispatch()
 
   useEffect(() => {
       setOpen(false)
@@ -26,6 +30,20 @@ const ButtonIsSign = () => {
     setOpen(!open)
     
   }
+
+  const logoutHandler = async() =>{
+    try {
+      const res = await axios("/api/auth/signout")
+      const data = res.data
+      dispatch(fetchUser())
+    } catch (error) {
+        console.log(error)      
+    }
+      
+  }
+
+
+
 
   return (
     <div className='btn-is-sign'>
@@ -51,7 +69,7 @@ const ButtonIsSign = () => {
               {t("subscription")} : 60 {t("day")}
             </Link>
             <Divider /> 
-            <button type='button'  className='btn-is-sign__link'>
+            <button type='button'  className='btn-is-sign__link' onClick={logoutHandler}>
               <LogoutIcon /> 
               {t("logout")}
             </button>

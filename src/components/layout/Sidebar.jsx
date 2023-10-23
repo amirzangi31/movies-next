@@ -18,6 +18,8 @@ import LangIcon from '@/icons/LangIcon'
 import MoviesIcon from '@/icons/menu/MoviesIcon'
 import {   usePathname } from 'next/navigation'
 import { shortPahtnameHandler } from '@/helper/functions'
+import useAuth from '@/hooks/useAuth'
+import LoaderButton from '../element/LoaderButton'
 
 
 const menuData = [
@@ -70,7 +72,7 @@ const Sidebar = ({open , setOpen }) => {
   const locale = useLocale()
   const pathname = usePathname()
 
-  
+  const {auth } = useAuth()
   
 
 
@@ -94,11 +96,13 @@ const Sidebar = ({open , setOpen }) => {
 
         <div className='h-[63px] flex justify-center items-center px-4'><LogoIcon /> </div>
         <div className='flex justify-center items-center md:hidden'>
-          {false ? <ButtonIsSign />  : (
+          {auth === "authorazation" ? <ButtonIsSign />  : (
             
             <div className='flex justify-center items-center gap-1 flex-wrap'>
+                {auth === "isLoading" ? <LoaderButton /> : <>
                 <Link href={`/${locale}/signin`} ><button  type='button' className="btn btn-sm btn-outline-primary">{authB("signIn")}</button></Link>
               <Link href={`/${locale}/signup`} ><button  type='button' className="btn btn-sm btn-primary">{authB("signUp")} </button></Link>
+                </>}
             </div>
           )}
         </div>

@@ -5,14 +5,18 @@ import Header from "@layout/Header";
 import { useEffect, useState } from "react";
 
 import { usePathname } from "next/navigation";
+import { Toaster } from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUser } from "@/store/features/userSlice";
 
 
 
 
 const Layout = ({ children }) => {
   const [openMenu , setOpenMenu] = useState(false)
-
   const pathname = usePathname()
+
+  
 
 
   useEffect(() => {
@@ -43,6 +47,7 @@ const Layout = ({ children }) => {
         
         <div className="pt-4 px-6">{children}</div>
       </main>
+      <Toaster position="top-left"   />
     </div>
   );
 };
