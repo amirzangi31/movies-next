@@ -7,8 +7,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-
-
 const MovieCard = () => {
 const t = useTranslations("MovieCard")
 const local = useLocale()

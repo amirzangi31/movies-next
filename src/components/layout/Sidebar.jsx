@@ -28,7 +28,7 @@ const menuData = [
     en : "Home",
     link : {
       en : "/en",
-      fa : "/"
+      fa : "/fa"
     },
     icon : <HomeIcon /> 
   },
@@ -38,7 +38,7 @@ const menuData = [
   
     link : {
       en : "/en/favorites",
-      fa : "/favorites"
+      fa : "/fa/favorites"
     },
     icon : <HeartIcon /> 
   },
@@ -48,7 +48,7 @@ const menuData = [
   
     link : {
       en : "/en/movies",
-      fa : "/movies"
+      fa : "/fa/movies"
     },
     icon : <MoviesIcon /> 
   },
@@ -58,7 +58,7 @@ const menuData = [
   
     link : {
       en : "/en/subscribe",
-      fa : "/subscribe"
+      fa : "/fa/subscribe"
     },
     icon : <SubscriptionIcon /> 
   },
