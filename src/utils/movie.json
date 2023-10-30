@@ -1,0 +1,180 @@
+
+[
+  {
+    "name_english": "Robert Pattinson",
+    "name_persian": "رابرت پتینسون",
+    "birth_year": 1986,
+    "movies": [
+      "Twillight",
+      "The Batman",
+      "Tenet",
+      "The Lighthouse",
+      "The Devil All the Time",
+      "Cosmopolis",
+      "Water for Elephants"
+    ],
+    "bio": "رابرت پتینسون (Robert Pattinson) با نام کامل Robert Douglas Thomas Pattinson متولد 13 می 1986 در لندن بازیگر، مدل، نوازنده و تهیه کننده انگلیسی است. مادرش، کلر در آژانس مدل کار می‌کرد و پدرش، ریچارد به واردات ماشین از کشور آمریکا مشغول بود. او به همراه دو خواهر بزرگترش، لیزی و ویکتوریا در بارنز واقع در جنوب غربی لندن بزرگ شد.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Robert-Pattinson.jpg"
+  },
+  {
+    "name_english": "Chris Hemsworth",
+    "name_persian": "کریس همسورث",
+    "birth_year": 1983,
+    "movies": [
+      "Avengers: End Game",
+      "Thor: Ragnarok",
+      "Extraction",
+      "Thor",
+      "Men In Black: International",
+      "Bad Times at The El Royale",
+      "12 Strong"
+    ],
+    "bio": "کریس هِمسوُرث به انگلیسی Chris Hemsworth، متولد 11 اوت 1983 در ملبورن و بازیگر استرالیایی است که در فیلم‌هایی همچون ثور و انتقام‌جویان و همچنین با نقشی کوتاه در فیلم کابین در جنگل بازی کرده است. او همچنین در فیلم ثور: راگناروک که ادامه ثور (فیلم) و ثور: دنیای تاریک می‌باشد نیز ایفای نقش می‌کند.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Chris-Hemsworth.jpg"
+  },
+  {
+    "name_english": "Jake Gyllenhaal",
+    "name_persian": "جیک جیلنهال",
+    "birth_year": 1980,
+    "movies": [
+      "NightCrawler",
+      "Donnie Darko",
+      "Brokeback Mountain",
+      "Prisoners",
+      "Southpaw"
+    ],
+    "bio": "جیک جیلنهال (Jake Gyllenhaal) بازیگر آمریکایی متولد 19 نوامبر 1980 است. او پسر کارگردان، استیون جیلنهال و نمایشنامه‌نویس، ناومی فومر است و بازیگری را از سن 10 سالگی شروع کرده است. او از زمانی که اولین نقش اصلی‌اش در سال 1999 در فیلمی به نام آسمان اکتبر بازی کرد، در نقش‌های متفاوتی ظاهر شده. در سال 2001 در فیلم دانی دارکو نقش یک نوجوان روان‌پریش را بازی کرد.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Jake-Gyllenhaal.jpg"
+  },
+  {
+    "name_english": "Ryan Gosling",
+    "name_persian": "رایان گاسلینگ",
+    "birth_year": 1980,
+    "movies": [
+      "La La Land",
+      "The Notebook",
+      "Drive",
+      "Blade Runner 2049",
+      "Crazy,Stupid,Love"
+    ],
+    "bio": "رایان توماس گاسلینگ (به انگلیسی: Ryan Thomas Gosling) متولد 12 نوامبر 1980و یک هنرپیشه و موزیسین کانادایی است. گاسلینگ کار خود را در کودکی با تست خوانندگی در یک مسابقه استعداد یابی آغاز کرد. وی سپس برای بازی در سری تلویزیونی « The Mickey Mouse Club » تست هنرپیشگی داد و با اینکه تعداد متقاضیان بسیار زیاد بود، موفق شد تا در این تست پذیرفته شود و به مدت 2 سال درا ین برنامه حضور پیدا کند.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Ryan-Gosling.jpg"
+  },
+  {
+    "name_english": "Johnny Depp",
+    "name_persian": "جانی دپ",
+    "birth_year": 1963,
+    "movies": [
+      "Pirates of the Caribbean",
+      "Fantastic Beasts and Where to Find Them",
+      "Edward Scissorhands",
+      "Charlie and the Chocolate Factory",
+      "Sweeney Todd: The Demon Barber of Fleet Street"
+    ],
+    "bio": "جانی دپ با نام کامل جان کریستوفر جانی دپ دوم به انگلیسی John Christopher Johnny Depp II متولد 9 ژوئن 1963 بازیگر، تهیه‌کننده، موسیقی‌دان، فیلم‌نامه‌نویس و کارگردان آمریکایی‌ است.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Johnny-Depp.jpg"
+  },
+  {
+    "name_english": "Hugh Jackman",
+    "name_persian": "هیو جکمن",
+    "birth_year": 1968,
+    "movies": [
+      "X-Men",
+      "The Wolverine",
+      "Logan",
+      "The Greatest Showman",
+      "Prisoners"
+    ],
+    "bio": "هیو جکمن به انگلیسی Hugh Jackman متولد 12 اکتبر 1968 بازیگر و تهیه‌کننده استرالیایی است. والدین او اهل انگلستان بودند که به استرالیا سفر کرده و جکمن در آنجا به دنیا آمد. او بیشتر برای بازی طولانی مدتش در نقش ولورین در سری فیلم‌های مردان اکس شهرت دارد.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Hugh-Jackman.jpg"
+  },
+  {
+    "name_english": "Jared Leto",
+    "name_persian": "جرد لتو",
+    "birth_year": 1971,
+    "movies": [
+      "Suicide Squad",
+      "Dallas Buyers Club",
+      "Requiem for a Dream",
+      "American Psycho",
+      "Mr. Nobody"
+    ],
+    "bio": "جرد لتو (Jared Leto) با نام کامل جرد جوزف برایانت (Jared Joseph Bryant) بازیگر، کارگردان و تهیه‌کننده آمریکایی متولد 26 دسامبر 1971 در لوئیزیانای آمریکا می‌باشد. او یکی از چهره‌های شناخته‌شده در فیلم‌های تاریخی اخیر است و علاوه بر کار در سینما، در گروه موسیقی راک «سی ثانیه تا مریخ» (Thirty Seconds to Mars) به همراه برادرش شنون لتو فعالیت می‌کند.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Jared-Leto.jpg"
+  },
+  {
+    "name_english": "Al Pacino",
+    "name_persian": "آل پاچینو",
+    "birth_year": 1940,
+    "movies": [
+      "The Godfather",
+      "Scarface",
+      "The Irishman",
+      "Scent of a Woman",
+      "Heat",
+      "Dog Day Afternoon",
+      "Serpico"
+    ],
+    "bio": "آلفردو جیمز «اَل» پاچینو به انگلیسی Al Pacino، متولد 25 آوریل 1940، بازیگر و کارگردان آمریکایی است. وی بیشتر برای شیوه بازیگری سبک متد، پرشور و برون گرا خود و با بازی در سه‌گانه پدرخوانده و فیلم‌های بعد از ظهر سگی، بوی خوش زن و صورت زخمی شناخته می‌شود.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Al-Pacino.jpg"
+  },
+  {
+    "name_english": "Christian Bale",
+    "name_persian": "کریستین بیل",
+    "birth_year": 1974,
+    "movies": [
+      "Batman Begins",
+      "The Dark Night",
+      "American Psycho",
+      "The Machinist",
+      "The Fighter",
+      "Ford V Ferrari",
+      "American Hustle"
+    ],
+    "bio": "کریستین بیل به انگلیسی Christian Bale متولد 30 ژانویه 1974 بازیگر انگلیسی است. نام کامل او کریستین چارلز فیلیپ بیل است. بیل هنگامی که در 13 سالگی در نقش اول فیلم امپراطوری خورشید استیون اسپیلبرگ بازی کرد، توجهات را به خود جلب کرد.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Christian-Bale.jpg"
+  },
+  {
+    "name_english": "Heath Ledger",
+    "name_persian": "هیث لجر",
+    "birth_year": 1979,
+    "movies": [
+      "The Dark Night",
+      "Brokeback Mountain",
+      "10 Things I Hate About You",
+      "A Knight's Tale",
+      "The Patriot"
+    ],
+    "bio": "هیث لجر(Heath Ledger) بازیگر و کارگردان استرالیایی متولد 4 آوریل 1979 است. او برای بازی در «کوهستان بروکبک2005» نامزد اسکار، گلدن گلوب و بفتا شد و در «شوالیه تاریکی2008» برنده گلدن گلوب و اسکار بازیگر نقش مکمل شد که فرصت دریافت آن را پیدا نکرد. او در 28 ژانویه 2008 و در سن 28 سالگی در نیویورک از دنیا رفت.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Heath-Ledger.jpg"
+  },
+  {
+    "name_english": "Brad Pitt",
+    "name_persian": "برد پیت",
+    "birth_year": 1963,
+    "movies": [
+      "Once Upon A Time In Hollywood",
+      "Fight Club",
+      "Inglourious Basterds",
+      "Seven",
+      "Ocean's Eleven"
+    ],
+    "bio": "برد پیت به انگلیسی Brad Pitt متولد 18 دسامبر 1963، بازیگر و تهیه کننده آمریکایی است. او تاکنون پنج بار نامزد دریافت جایزه اسکار و جایزه گلدن گلوب و یک‌ بار برنده جایزه گلدن گلوب شده است. مادرش مشاور مدرسه و پدرش مدیر کمپانی کامیون است.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Brad-Pitt.jpg"
+  },
+  {
+    "name_english": "Leonardo DiCaprio",
+    "name_persian": "لئوناردو دی‌کاپریو",
+    "birth_year": 1974,
+    "movies": [
+      "Once Upon A Time In Hollywood",
+      "Titanic",
+      "The Wolf of Wall Street",
+      "The Revenant",
+      "Django Unchained",
+      "The Great Gatsby"
+    ],
+    "bio": "لئوناردو ویلهلم دی‌کاپریو ( Leonardo Wilhelm DiCaprio ) بازیگر، تهیه کننده و نویسنده آمریکایی است. نام مستعار او لئو و لنی دی است. پدرش جورج دی کاپریو، تهیه کننده و نویسنده کمیک بود. مادرش یکسال پس از به دنیا آمدن لئوناردو از پدرش جدا شد و در سال 2008 در سن 93 سالگی درگذشت.",
+    "thumbnail": "https://modos.github.io/persian-cinema-json/actors/Leonardo-DiCaprio.jpg"
+  }
+]

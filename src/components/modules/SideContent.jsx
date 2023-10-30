@@ -15,20 +15,11 @@ const SideContent = () => {
                     <ArrowDownOne /> 
                 </h3>
               <div className='mt-4 flex justify-start items-center flex-col gap-4 '>
-              <CardSide title={t("movieOne")}  range={9.3} sesson={8} /> 
-                <CardSide  title={t("movieTwo")} range={9.3} sesson={5} /> 
+              <CardSide name_persian={t("movieOne")} name_english={t("movieOne")}  imdb={9.3} thumbnail={"/cover-one.png"} /> 
+                <CardSide  name_persian={t("movieTwo")} name_english={t("movieTwo")} imdb={9.3} thumbnail={"/cover-two.png"} /> 
               </div>
             </div>
-            {/* <div  className='mt-8'>
-                <h3 className='flex justify-between items-center relative after:absolute after:top-full rtl:after:right-0 ltr:after:left-0 after:w-1/2 after:h-[2px] after:block after:bg-primary'>
-                    جدیدترین
-                    <ArrowDownOne /> 
-                </h3>
-              <div className='mt-4 flex justify-start items-center flex-col gap-4 '>
-              <CardSide /> 
-                <CardSide /> 
-              </div>
-            </div> */}
+            
     </div>
   )
 }

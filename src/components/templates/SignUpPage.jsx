@@ -22,13 +22,15 @@ const SignUpPage = () => {
                 setLoading(true)
                 axios.post("/api/auth/signup" , values)
                 .then(data =>{
+                        setLoading(false)
                         toastify("success" , data.data.message)
                         submitProps.resetForm()
                 })
-                .catch(error => 
+                .catch(error => {
+                        setLoading(false) 
                         toastify("error" , error.response.data.error)
-                )
-                 setLoading(false)
+                })
+                 
         }
 
     

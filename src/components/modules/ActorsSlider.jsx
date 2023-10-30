@@ -15,7 +15,7 @@ import ActorElement from './ActorElement';
 
 
 
-const ActorsSlider = () => {
+const ActorsSlider = ({actors}) => {
   return (
     <Swiper
                     modules={[EffectCoverflow, Autoplay]}
@@ -52,74 +52,24 @@ const ActorsSlider = () => {
                             slidesPerView: 4,
                         },
                         1200: {
-                            slidesPerView: 6,
+                            slidesPerView: 5,
                         },
                     }}
                 >
-             
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-             
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-             
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                        <SwiperSlide className="actor-slide">
-                            <ActorElement /> 
-                        </SwiperSlide>
-                    
+                        {
+                            JSON.parse(actors).map(item => {
+                              
+                             
+                                
+                            return (
+                                <SwiperSlide className="actor-slide" key={item._id.toString()} >
+                                <ActorElement  {...item} /> 
+                            </SwiperSlide>
+                            )
+
+                            })
+                        }
+                      
 
                 </Swiper>
   )

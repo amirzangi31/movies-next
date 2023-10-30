@@ -11,11 +11,11 @@ const Searchbox = ({open , setOpen}) => {
 
   const openHandler = () => {
     setOpen(true)
-    console.log(open)
+    
   }
   const closeHandler = () => {
     setOpen(false)
-    console.log(open)
+    
   }
 
 

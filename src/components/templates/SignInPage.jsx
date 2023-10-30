@@ -28,7 +28,7 @@ const SignInPage = () => {
         dispatch(fetchUser())
         router.push(local === "en" ? "/en" : "/")
       }).catch(err => {
-        setLoading(false)
+        setLoading(false) 
         toastify("error" , err.response.data.error)
       })
       

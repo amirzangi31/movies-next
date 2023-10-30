@@ -1,18 +1,19 @@
+"use client"
 import React from 'react'
 import LayoutContent from '../layout/LayoutContent'
 import BannerPrimary from '../modules/BannerPrimary'
 import NewIcon from '@/icons/NewIcon'
 import { useLocale, useTranslations } from 'next-intl'
 import MovieCard from '../modules/MovieCard'
-import UserIcon from '@/icons/UserIcon'
-import ActorElement from '../modules/ActorElement'
 import ActorsSlider from '../modules/ActorsSlider'
 import Link from 'next/link'
 import ArrowLeftIcon from '@/icons/ArrowLeftIcon'
 import MovieSliderEffect from '../modules/MovieSliderEffect'
 import ArrowRightIcon from '@/icons/ArrowRightIcon'
 
-const HomePage = () => {
+const HomePage = ({newestMovie , actors  , movies }) => {
+
+
 
   const titles = useTranslations("Titles")
   const local = useLocale()
@@ -25,10 +26,9 @@ const HomePage = () => {
             {titles("newest")}
           </h2>
           <div className='mt-6 grid grid-cols-1 gap-4  xl:grid-cols-2 5xl:grid-cols-4'>
-            <MovieCard /> 
-            <MovieCard /> 
-            <MovieCard /> 
-            <MovieCard /> 
+            
+              {JSON.parse(newestMovie).map(item => <MovieCard key={item._id} {...item} /> )}
+
           </div>
         </div>
         <div className='mt-6 w-full'>
@@ -40,7 +40,7 @@ const HomePage = () => {
             </Link>
           </h2>
           <div className='mt-4 p-2 flex justify-start items-center gap-2  '>
-                <ActorsSlider /> 
+                <ActorsSlider actors={actors} /> 
           </div>
         </div>
         <div className='mt-6 w-full'>
@@ -52,7 +52,7 @@ const HomePage = () => {
             </Link>
           </h2>
           <div className='mt-4 p-2 flex justify-start items-center gap-2  '>
-                <MovieSliderEffect /> 
+                <MovieSliderEffect data={movies} /> 
           </div>
         </div>
         <div className='mt-6 w-full'>
@@ -64,7 +64,7 @@ const HomePage = () => {
             </Link>
           </h2>
           <div className='mt-4 p-2 flex justify-start items-center gap-2  '>
-                <MovieSliderEffect /> 
+                <MovieSliderEffect data={movies} /> 
           </div>
         </div>
         <div className='mt-6 w-full'>
@@ -76,7 +76,7 @@ const HomePage = () => {
             </Link>
           </h2>
           <div className='mt-4 p-2 flex justify-start items-center gap-2  '>
-                <MovieSliderEffect /> 
+                <MovieSliderEffect data={movies} /> 
           </div>
         </div>
         

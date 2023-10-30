@@ -54,7 +54,7 @@
     "genre" : "ژانر",
     "director" : "کارگردان",
     "language":"زبان",
-    "periodOfTime" : "مدت زمان",
+    "periodOfTime" : "سال تولید",
     "quality" : "کیفیت"
   },
   "Auth" : {

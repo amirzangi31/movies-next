@@ -55,7 +55,7 @@
     "genre" : "Genre",
     "director" : "Director",
     "language":"Language",
-    "periodOfTime" : "Period of time",
+    "periodOfTime" : "Year",
     "quality" : "Quality"
   },
   "Auth" : {

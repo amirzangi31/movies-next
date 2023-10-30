@@ -11,7 +11,7 @@ import CardSide from './CardSide';
 
 
 
-const MovieSliderEffect = () => {
+const MovieSliderEffect = ({data}) => {
   return (
     <Swiper
     modules={[EffectCoverflow, Autoplay, Pagination]}
@@ -60,54 +60,12 @@ const MovieSliderEffect = () => {
         },
     }}
 >
+        {JSON.parse(data).map(item => (
 
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
+        <SwiperSlide key={item._id}  className='actor-slide'>
+            <CardSide {...item}/> 
         </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
-
-        <SwiperSlide  className='actor-slide'>
-            <CardSide title="game of thrones" range={9.3} sesson={8} /> 
-        </SwiperSlide>
+        ))}
 
 
 </Swiper>

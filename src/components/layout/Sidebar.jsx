@@ -26,40 +26,28 @@ const menuData = [
   {
     fa : "صفحه اصلی",
     en : "Home",
-    link : {
-      en : "/en",
-      fa : "/fa"
-    },
+    link : "",
     icon : <HomeIcon /> 
   },
   {
     fa : "مورد علاقه",
     en : "Favorites",
   
-    link : {
-      en : "/en/favorites",
-      fa : "/fa/favorites"
-    },
+    link : "/favorites",
     icon : <HeartIcon /> 
   },
   {
     fa : "فیلم ها",
     en : "Movies",
   
-    link : {
-      en : "/en/movies",
-      fa : "/fa/movies"
-    },
+    link : "/movies",
     icon : <MoviesIcon /> 
   },
   {
     fa : "خرید اشتراک",
     en : "Subscribe",
   
-    link : {
-      en : "/en/subscribe",
-      fa : "/fa/subscribe"
-    },
+    link : "/subscribe",
     icon : <SubscriptionIcon /> 
   },
 ]
@@ -114,7 +102,7 @@ const Sidebar = ({open , setOpen }) => {
               {menuData.map((item , index ) => (
                 <li key={index}  className='menu-sidebar__item'>
                   
-                  <Link href={item.link[locale]} className='menu-sidebar__link'>
+                  <Link href={`/${locale}${item.link}`} className='menu-sidebar__link'>
                     <span className=' w-[30px] h-[30px]  flex justify-center items-center'>{item.icon}</span>
                      <p className='w-[100px]'>{item[locale]}</p>
                     </Link>
